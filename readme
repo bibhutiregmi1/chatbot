@@ -1,0 +1,33 @@
+1) rasa init --no-prompt
+
+
+2) Make changes in files
+in nlu.yml
+- intent: corona_info(kasto questions lai yo intent)
+  examples: |
+    - what is corona?
+    - what is covid?
+    - what is covid19?
+    - tell me about covid19
+    - information about covid-19
+
+
+in stories.yml
+- story: covid info
+  steps:
+  - intent: corona_info
+  - action: utter_corona_info
+
+
+in domain.yml
+intents:
+  - corona_info
+
+responses:
+  utter_corona_info:
+  - text: "This is corona_info"
+
+
+3) rasa train
+4) rasa shell
+

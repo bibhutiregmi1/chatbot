@@ -1,0 +1,63 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - namaster
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - sayunara
+    - alvida
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: corona_info
+  examples: |
+    - what is corona?
+    - what is covid?
+    - what is covid19?
+    - tell me about covid19
+    - information about covid-19
+
+
+- intent: corona_symptoms
+  examples: |
+    - what are corona symptoms?
+    - what is covid symptoms?
+    - what is covid19 symptoms?
+    - tell me about covid19 symptoms
+    - information about covid-19 symptoms
+
+

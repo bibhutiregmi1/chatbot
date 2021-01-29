@@ -1,0 +1,20 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+- story: covid info
+  steps:
+  - intent: corona_info
+  - action: utter_corona_info
+
+
+- story: corona symptoms
+  steps:
+  - intent: corona_symptoms
+  - action: utter_corona_symptoms
