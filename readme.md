@@ -84,3 +84,8 @@ Run using terminal
 - one for rasa core and one for rasa actions
   - rasa shell
   - rasa run actions
+
+
+For api support:
+- instead of rasa shell run:
+  - rasa run -m models --enable-api
