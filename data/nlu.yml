@@ -18,6 +18,18 @@ nlu:
     - good afternoon
     - namaster
 
+- intent: intent_good
+  examples: |
+    - i am good
+    - i am fine
+
+- intent: intent_bad
+  examples: |
+    - i am not good
+    - i am not fine
+    - i am bad
+
+
 - intent: goodbye
   examples: |
     - good afternoon

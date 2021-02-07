@@ -8,6 +8,16 @@ stories:
   - action: utter_greet
 
 
+- story: good click
+  steps:
+  - intent: intent_good
+  - action: action_good
+  
+- story: bad click
+  steps:
+  - intent: intent_bad
+  - action: action_bad
+  
 - story: covid info
   steps:
   - intent: corona_info

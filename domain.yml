@@ -6,10 +6,23 @@ intents:
   - corona_info
   - corona_symptoms
   - bot_challenge
+  - intent_good
+  - intent_bad
+
+actions:
+  - action_good
+  - action_bad
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
+    buttons:
+    - title: "I am good"
+      payload: /intent_good
+
+    - title: "I am not good"
+      payload: /intent_bad
+
 
   utter_goodbye:
   - text: "Bye"
