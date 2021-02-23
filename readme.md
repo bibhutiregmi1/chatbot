@@ -3,7 +3,7 @@
 
 2) Make changes in files
 in nlu.yml
-- intent: corona_info(kasto questions lai yo intent)
+- intent: corona_info(questions for this classifying as this intent?)
   examples: |
     - what is corona?
     - what is covid?
@@ -86,6 +86,26 @@ Run using terminal
   - rasa run actions
 
 
-For api support:
+### For api support:
 - instead of rasa shell run:
   - rasa run -m models --enable-api
+
+
+## For database support:
+in endpoints.yml, fill in the required info
+###for sqlite:
+tracker_store:
+    type: SQL
+    url: "sqlite:///./chatbot.db"
+    db: "chatbot.db"
+    username:
+    password:
+
+### for postgres
+tracker_store:
+    type: SQL
+    url: ""
+    dialect: "postgresql"
+    db: "<db name here>"
+    username: <username here>
+    password: <admin>
